@@ -1,5 +1,4 @@
 import react from '@vitejs/plugin-react'
-
 import path from 'node:path'
 import process from 'node:process'
 import { fileURLToPath } from 'node:url'
@@ -15,7 +14,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react(), viteCompression()],
     server: {
-      port: 3000,
+      port: 5173,
       hmr: !isProduction,
       proxy: !isProduction
         ? {

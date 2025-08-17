@@ -15,30 +15,30 @@ type에 따라서 다양한 아이콘을 불러올 수 있습니다
 ### 기본 사용법
 
 ```jsx
-import SvgIcon, { ICON_TYPES } from '@/components/svg-icon'
+import Icon, { SVGICON_TYPE } from '@/components/svgIcon'
 
 // 기본 아이콘 (위쪽 화살표)
-<SvgIcon />
+<Icon />
 
 // 특정 타입의 아이콘
-<SvgIcon type={ICON_TYPES.CHECK_MARK} />
+<Icon type={SVGICON_TYPE.CHECK_MARK} />
 
 // 크기와 색상 지정
-<SvgIcon type={ICON_TYPES.CROSS} size={32} color="#FF0000" />
+<Icon type={SVGICON_TYPE.CROSS} size={32} color="#FF0000" />
 
 // 접근성 레이블 추가
-<SvgIcon type={ICON_TYPES.SPINNER} label="로딩 중" />
+<Icon type={SVGICON_TYPE.SPINNER} label="로딩 중" />
 ```
 
 ### 지원되는 아이콘 타입
 
 ![지원되는 아이콘 실제이미지](./svgIcon.png)
 
-- `SVGICON_TYPES.UP_ARROW`: 위쪽 화살표
-- `SVGICON_TYPES.SPINNER`: 로딩 스피너
-- `SVGICON_TYPES.CHECK_MARK`: 체크 마크
-- `SVGICON_TYPES.CROSS`: X 표시
-- `SVGICON_TYPES.NOT_ALLOWED`: 금지 표시
+- `SVGICON_TYPE.UP_ARROW`: 위쪽 화살표
+- `SVGICON_TYPE.SPINNER`: 로딩 스피너
+- `SVGICON_TYPE.CHECK_MARK`: 체크 마크
+- `SVGICON_TYPE.CROSS`: X 표시
+- `SVGICON_TYPE.NOT_ALLOWED`: 금지 표시
 
 ### 속성(props)
 
